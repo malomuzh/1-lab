@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій ЗВО - Персональний сайт студента</title>
+		<style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="hobbies.html">Мої захоплення</a></li>
+			<li><a href="university.html">Мій ЗВО</a></li>
+            <li><a href="profession.html">Моя майбутня професія</a></li>
+            <li><a href="group.html">Моя група</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <h1>Мій ЗВО - ЧНУ ім. Б. Хмельницького</h1>
+            
+            <img src="C:\Users\Соня\Desktop\веб сайт\images\university.jpg" alt="Будівля університету">
+            
+            <h2>Про університет</h2>
+            <p>Черкаський національний університет імені Богдана Хмельницького - один з провідних закладів вищої освіти в регіоні. Заснований у 1921 році.</p>
+            
+            <h2>Історія та досягнення</h2>
+            <p>За роки свого існування університет підготував тисячі висококваліфікованих фахівців. Серед випускників університету — відомі науковці, політики, громадські діячі.</p>
+            
+            <img src="C:\Users\Соня\Desktop\веб сайт\images\university-life.jpg" alt="Студентське життя">
+            
+            <h2>Мій факультет</h2>
+            <p>Факультет інформаційних технологій є провідним підрозділом Черкаського національного університету, який готує висококваліфікованих фахівців у сфері комп'ютерних наук, інформаційних технологій та кібербезпеки.</p>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Швидкі факти</h2>
+            <ul>
+                <li>Рік заснування: 1921</li>
+                <li>Кількість факультетів: 10</li>
+                <li>Кількість студентів: 7000+</li>
+                <li>Місце розташування: м. Черкаси</li>
+            </ul>
+            
+            <h2>Корисні посилання</h2>
+            <ul>
+                <li><a href="https://cdu.edu.ua">Офіційний сайт</a></li>
+                <li><a href="https://iot.cdu.edu.ua/">Сторінка факультету</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>

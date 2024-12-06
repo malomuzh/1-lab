@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої захоплення - Персональний сайт студента</title>
+		<style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .hobby-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="hobbies.html">Мої захоплення</a></li>
+            <li><a href="university.html">Мій ЗВО</a></li>
+            <li><a href="profession.html">Моя майбутня професія</a></li>
+            <li><a href="group.html">Моя група</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <h1>Мої захоплення</h1>
+            
+            <div class="hobby-card">
+                <h2>Читання</h2>
+                <img src="C:\Users\Соня\Desktop\веб сайт\images\reading.jpg" alt="Читання книг">
+                <p>Моє найулюбленіше хобі - читання. Я захоплююся різноманітною літературою, від класики до сучасних романів. Особливо подобаються триллери та детективи.</p>
+                <p>Улюблені автори:</p>
+                <ul>
+                    <li>Джон Маррс</li>
+                    <li>Даніель Коул</li>
+                    <li>Агата Крісті</li>
+                </ul>
+            </div>
+
+            <div class="hobby-card">
+                <h2>Відеомонтаж або моушн дизайн</h2>
+					
+					<video 
+						width="640" 
+						height="360" 
+						controls 
+						autoplay 
+						muted 
+						loop 
+						preload="auto"
+					>
+						<source src="C:\Users\Соня\Desktop\веб сайт\images\Merry Christmas.mp4" type="video/mp4">
+						Ваш браузер не підтримує відео тег.
+					</video>
+                <p>Досить нещодавно відкрила для себе любов до цього хоббі, хоча і раніше з ним стикалася. Хотіла би й надалі розвиватися у цьому напрямку.</p>
+            </div>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Цікаві факти</h2>
+            <ul>
+                <li>Колекціоную улюблені книжки для особистої бібліотеки))</li>
+                <li>Досить непогано володію програмами Adobe</li>
+                <li>Мрію стати відеомонтажером</li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>

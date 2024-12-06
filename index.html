@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персональний сайт студента</title>
+		<style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="hobbies.html">Мої захоплення</a></li>
+			<li><a href="university.html">Мій ЗВО</a></li>
+            <li><a href="profession.html">Моя майбутня професія</a></li>
+            <li><a href="group.html">Моя група</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <h1>Ласкаво прошу на мій персональний сайт</h1>
+            <img src="C:\Users\Соня\Desktop\веб сайт\images\profile-photo.jpg" alt="Моє фото" style="max-width: 300px;">
+            <p>Вітаю! Мене звати Софія. Я студентка Черкаського національного університету імені Богдана Хмельницького.</p>
+            <p>На цьому сайті ви зможете дізнатися більше про мене, мої захоплення та навчання.</p>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Швидкі посилання</h2>
+            <ul>
+                <li><a href="about.html">Детальніше про мене</a></li>
+                <li><a href="contacts.html">Зв'язатися зі мною</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>

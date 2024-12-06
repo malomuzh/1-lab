@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене - Персональний сайт студента</title>
+		<style>
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav li {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="hobbies.html">Мої захоплення</a></li>
+			<li><a href="university.html">Мій ЗВО</a></li>
+            <li><a href="profession.html">Моя майбутня професія</a></li>
+            <li><a href="group.html">Моя група</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main class="content">
+            <h1>Про мене</h1>
+            <img src="C:\Users\Соня\Desktop\веб сайт\images\my-photo1.jpg" alt="Моє фото 1">
+            <p>Мене звати Маломуж Софія Андріївна</p>
+			<p>Я народилася 21 липня 2004 року, в місті Черкаси</p>
+            <img src="C:\Users\Соня\Desktop\веб сайт\images\my-photo2.jpg" alt="Моє фото 2">
+            <p>До ЧНУ навчалася в ЧДБК на 121 спеціальності</p>
+			<p>Здобула ступінь молодшого спеціаліста спеціальності "Інженерія програмного забезпечення"</p>
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Цікаві факти про мене</h2>
+            <ul>
+                <li>Я дуже люблю котиків:^)</li>
+                <li>Займалася танцями близько 3-4 років та маю близько 50-ти медалей та кілька кубків</li>
+                <li>Займаючись робототехнікою у 8-му класі, разом з командою здобули перше місце у Всеукраїнських змаганнях</li>
+            </ul>
+        </aside>
+    </div>
+</body>
+</html>
